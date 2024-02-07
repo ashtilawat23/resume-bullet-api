@@ -1,4 +1,3 @@
 FastAPI
 uvicorn[standard]
 python-dotenv
-openai
