@@ -34,3 +34,9 @@ API.add_middleware(
 async def get_api_version():
     """Returns the current version of the API."""
     return API_VERSION
+
+# Define an endpoint to return a dummy resume bullet point
+@API.get("/resume-bullet", tags=["Resume"])
+async def get_resume_bullet():
+    """Returns a dummy resume bullet point."""
+    return "Developed a RESTful API using FastAPI to serve resume bullet points from a database and deployed it to a cloud platform."
